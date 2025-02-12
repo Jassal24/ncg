@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Typing</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        h1 {
+            font-size: 2rem;
+            font-family: Arial, sans-serif;
+        }
+        span {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="typing"></h1>
+
+    <script>
+        var typed = new Typed("#typing", {
+            strings: ["bago matulog, wag kalimutan mag? <span>LuLu</span>"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            showCursor: true,
+            loop: false
+        });
+    </script>
+</body>
+</html>
